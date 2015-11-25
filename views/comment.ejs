@@ -3,7 +3,7 @@
   <% post.comments.forEach(function (comment, index) { %>
     <div><p><%- comment.content %></p></div>
     <div class="info">
-      <i class="fa fa-user"></i><a href="/user/<%= post.name %>"> <%= post.name %></a> |
+      <i class="fa fa-user"></i><a href="/user/<%= comment.user %>"> <%= comment.user %></a> |
       <i class="fa fa-clock-o"></i><small> <%= comment.time %></small>
     </div>
     <hr>
